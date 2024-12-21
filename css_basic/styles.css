@@ -1,0 +1,76 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  width: 100%;
+  background-color: #e6d4f0; /* Light purple */
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Header Styling */
+header {
+  width: 100%;
+  background-color: #6a0dad; /* Dark purple */
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Footer Styling */
+footer {
+  width: 100%;
+  background-color: #6a0dad; /* Dark purple */
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Main Layout */
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 0;
+  padding: 1rem;
+  flex: auto;
+}
+
+/* Article and Aside */
+article {
+  flex: 2;
+  background-color: #d6b5ea; /* Light purple shade */
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+aside {
+  flex: 1;
+  background-color: #d6b5ea; /* Light purple shade */
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+/* Navigation Styling */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background-color: #8b47cc; /* Medium purple */
+  padding: 1rem 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
