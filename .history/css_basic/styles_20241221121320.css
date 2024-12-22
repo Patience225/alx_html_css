@@ -1,0 +1,89 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3e5f5; /* Light purple background */
+  color: #333; /* Dark text for readability */
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  align-items: center;
+  background-color: #6a0dad; /* Dark purple */
+  padding: 15px;
+  color: white;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+header ul li {
+  margin-right: 20px;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Logo Styling */
+.logo {
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+/* Main Layout */
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+}
+
+article {
+  flex: 2;
+  background-color: #e1bee7; /* Light purple shade */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+  flex: 1;
+  background-color: #d1c4e9; /* Another purple shade */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+aside h3 {
+  margin-top: 0;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  background-color: #6a0dad; /* Dark purple */
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  main {
+      flex-direction: column;
+  }
+}
