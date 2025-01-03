@@ -1,0 +1,294 @@
+﻿/**@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans 3", serif;
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/Object.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+.hero-links {
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px 20px;
+}
+.hero-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.hero-links a:hover {
+    color: rgba(194, 113, 255, 1);
+    transition: .3s;
+}
+
+#get-schooled {
+    font-size: 120px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.three-words {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 38.3vh;
+    left: 41vw;
+    z-index: 1;
+}
+.the-words {
+    color: white;
+    padding: 0px 25px;
+    font-weight: bold;
+}
+#header-button {
+    padding: 15px 15px;
+    font-size: 10px;
+    border-radius: 30px;
+    background: rgba(194, 113, 255, 1);
+    color: white;
+    position: absolute;
+    top: 46.5vh;
+    left: 45vw;
+    z-index: 2;
+}
+
+.learn-pros {
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    position: absolute;
+    bottom: 35vh;
+    left: 44vw;
+    z-index: 3;
+}
+.learn {
+    color: rgba(194, 113, 255, 1);
+    font-weight: 800;
+}
+.header-tutors {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 3vh;
+    left: 18vw;
+    z-index: 4;
+}
+.header-tutors h3, p {
+    color: white;
+    text-align: center;
+}
+.padding-tutors {
+    padding: 0 70px;
+}
+
+.weather-presenter {
+    width: 100vw;
+    height: 40vh;
+    background-color: rgba(194, 113, 255, 1);
+}
+
+.weather-presenter-structure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8vh 20vw;
+    color: white;
+}
+.weather-presenter-structure blockquote {
+    font-size: 2.2vmin;
+    padding: 0 25px;
+    font-weight: 300;
+}
+.weather-presenter-structure h3 {
+    font-size: 2.2vmin;
+    font-weight: bold;
+    margin-left: 65px;
+}
+.weather-presenter-structure p{
+    font-style: italic;
+    font-size: 2.2vmin;
+    font-weight: 300;
+    margin-left: 65px;
+    float: left;
+}
+
+.popular-tutorials {
+    width: 100vw;
+    height: 60vh;
+    margin-top: 80px;
+    position: relative;
+}
+.popular-tutorials h2 {
+    text-align: center;
+    color: rgba(7, 22, 41, 1);
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+.tutorial-elements {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 350px;
+}
+#tutorials-lorem-styling {
+    margin-right: 40px;
+    text-align: left;
+    color: rgba(7, 22, 41, 0.5016);
+}
+.image-tutor {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.image-tutor img {
+    width: 1.5vw;
+    height: 2.8vh;
+}
+.image-tutor h4 {
+    margin-left: 10px;
+    color: rgba(194, 113, 255, 1);
+}
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rating p {
+    margin-right: 80px;
+    color: rgba(194, 113, 255, 1);
+}
+.play-button-1 {
+    position: absolute;
+    top: 16vh;
+    left: 21.5vw;
+    z-index: 1;
+}
+.play-button-2 {
+    position: absolute;
+    top: 16vh;
+    left: 38vw;
+    z-index: 2;
+}
+.play-button-3 {
+    position: absolute;
+    top: 16vh;
+    right: 42.46vw;
+    z-index: 3;
+}
+.play-button-4 {
+    position: absolute;
+    top: 16vh;
+    right: 25.9vw;
+    z-index: 4;
+}
+
+.whole-free-membership {
+    background-color: rgba(7, 22, 41, 1);
+    width: 100vw;
+    height: 50vh;
+}
+.whole-free-membership h2 {
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+    padding-top: 67px;
+    padding-bottom: 30px;
+}
+.free-membership {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 300px;
+    margin-bottom: 70px;
+}
+.free-membership-elements {
+    text-align: center;
+    padding: 0 60px;
+}
+.free-membership-elements h3 {
+    color: white;
+    font-weight: 500;
+}
+.free-membership-elements p {
+    font-weight: 100;
+}
+#membership-button {
+    text-align: center;
+}
+#membership-button button {
+    padding: 15px 15px;
+    font-size: 10px;
+    border-radius: 30px;
+    background: rgba(194, 113, 255, 1);
+    color: white;
+}
+
+.frequently-asked {
+    width: 67vw;
+    height: 75vh;
+    margin: 70px auto 0;
+}
+.frequently-asked h2 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 60px;
+}
+.frequently-asked-elements {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.frequently-asked-elements-subsections p {
+    text-align: left;
+    padding: 0 150px 60px 80px;
+    font-weight: 300;
+    color: rgba(7, 22, 41, 0.5016);
+}
+.frequently-asked-elements-subsections h3 {
+    text-align: left;
+    padding: 0 150px 0 80px;
+}
+
+footer {
+    background-color: rgba(7, 22, 41, 1);
+    width: 100vw;
+    height: 25vh;
+}
+.whole-footer {
+    width: 70vw;
+    margin: 0 auto;
+    padding-top: 85px;
+}
+.footer-elements {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+.whole-footer p {
+    color: white;
+    font-weight: 100;
+}
+.footer-socials-logo {
+    padding: 0 7px;
+}
+    **
