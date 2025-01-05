@@ -1,0 +1,117 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #f3e5f5; /* Light purple background */
+  color: #333; /* Dark text for readability */
+  line-height: 1.5;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6a0dad; /* Dark purple */
+  padding: 15px 20px;
+  color: white;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between nav links */
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  background-color: #6a0dad; /* Dark purple */
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Main Layout */
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* Article and Aside Styling */
+article, aside {
+  background-color: #e1bee7; /* Light purple shade */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+article {
+  flex: 2;
+  overflow-y: auto;
+}
+
+aside {
+  flex: 1;
+  background-color: #d1c4e9; /* Slightly different purple shade */
+  overflow-y: auto;
+}
+
+aside h3 {
+  margin-top: 0;
+}
+
+/* Navigation Styling */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background-color: #8b47cc; /* Medium purple */
+  padding: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
