@@ -1,0 +1,1 @@
+# The project (SmileSchool) demonstrates fundamental HTML and CSS concepts, emphasizing layout and styling for modern web design.
