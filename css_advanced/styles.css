@@ -37,7 +37,7 @@ body {
 }
 
 .nav-links {
-  list-style: none;
+ 
   display: flex;
   gap: 20px;
 }
@@ -45,7 +45,7 @@ body {
 .nav-links li a {
   text-decoration: none;
   color: white;
-  font-weight: 500;
+ 
 }
 
 .banner {
@@ -69,7 +69,7 @@ body {
 .subtext span {
   margin: 0 10px;
   font-size: 1.2rem;
-  color: #aaa;
+  color: white;
 }
 
 .cta-button {
@@ -90,6 +90,10 @@ body {
 
 .learn-pros {
   margin-top: 30px;
+}
+
+.learn-pros p {
+  color: white;
 }
 
 .learn-pros span {
@@ -178,4 +182,117 @@ body {
   .testimonial-image {
     margin-bottom: 20px;
   }
+
+}
+
+
+.videos-list {
+  padding: 4rem 2rem;
+  text-align: left;
+  background-color: #fff;
+}
+
+.videos-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #423b3b;
+  text-align: center;
+}
+
+.videos-header .highlight {
+  color: #e942f5;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.video-card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+.thumbnail {
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: #000;
+  text-align: left;
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+  padding: 0 1rem;
+}
+
+.video-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: #fff;
+}
+
+.presenter {
+  display: flex;
+  align-items: center;
+}
+
+.presenter img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.presenter p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #e942f5;
+}
+
+.rating-duration img {
+  width: 80px;
+  height: auto;
+}
+
+.rating-duration p {
+  font-size: 0.9rem;
+  color: #e942f5;
 }
