@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
 
-/* Global components */
+/* Global Styles */
 * {
   padding: 0;
   margin: 0;
@@ -9,31 +9,35 @@
 body {
   font-family: "Source Sans 3", serif;
 }
-.our-results {
-  background-image: url(images/headphones_hero_2.jpg);
-  background-size: cover;
-  background-position: center;
+
+#results-hero {
+  background-image: linear-gradient(to right, #1d1e20, #2a2b2d);
   min-height: 100vh;
 }
-.card {
+
+.results-container {
   max-width: 1000px;
   padding: 16px;
   margin: auto;
   color: white;
 }
-p {
-  font-weight: lighter;
-}
-.card-1 {
+
+.results-header {
   text-align: center;
   padding: 0 150px;
 }
-h2 {
+
+.results-header h2 {
   margin-top: 100px;
   margin-bottom: 30px;
   font-weight: 500;
 }
-.card-2 {
+
+.results-header p {
+  font-weight: lighter;
+}
+
+.results-stats {
   margin-top: 80px;
   display: flex;
   gap: 70px;
@@ -42,53 +46,62 @@ h2 {
   margin-bottom: 30px;
   padding: 0 100px;
 }
-.card-2 img {
-  width: 8rem;
-  height: 7rem;
-}
-.card-2-elements {
+
+.stat-item {
   width: auto;
   height: auto;
   text-align: center;
   position: relative;
 }
-.card-2-elements-texts {
+
+.pentagon {
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 101, 101, 1);
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  margin: auto;
+}
+
+.stat-text {
   position: absolute;
-  top: 28%;
-  left: 22%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-  font-size: 15px;
 }
-.card-2-elements h5 {
+
+.stat-text h3 {
   font-size: 30px;
 }
-.card-2-elements p {
+
+.stat-text p {
   font-size: 9px;
   font-weight: lighter;
 }
 
+/* Responsive Design */
 @media screen and (max-width: 480px) {
-  .card-1 {
+  .results-header {
     padding: 0 16px;
   }
-  .card-2 {
+  .results-stats {
     flex-wrap: wrap;
   }
 }
 
 @media (max-width: 768px) and (min-width: 481px) {
-  .card-1 {
+  .results-header {
     padding: 0 25px;
   }
-  .card-2 {
+  .results-stats {
     flex-wrap: wrap;
     gap: 30px;
   }
 }
 
 @media (max-width: 1024px) and (min-width: 769px) {
-  .card-1 {
+  .results-header {
     padding: 0 50px;
   }
 }

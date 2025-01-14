@@ -42,10 +42,6 @@ h2 {
   margin-bottom: 30px;
   padding: 0 100px;
 }
-.card-2 img {
-  width: 8rem;
-  height: 7rem;
-}
 .card-2-elements {
   width: auto;
   height: auto;
@@ -68,6 +64,50 @@ h2 {
   font-weight: lighter;
 }
 
+/* Pentagon shape with animation */
+.animated-pentagon {
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 101, 101, 1);
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  animation: bounce 3s infinite ease-in-out, rotate 5s infinite linear;
+  margin: auto;
+}
+
+/* Hover effect on pentagon */
+.animated-pentagon:hover {
+  animation: hover-scale 0.5s forwards;
+}
+
+/* Animations */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes hover-scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+/* Responsive Design */
 @media screen and (max-width: 480px) {
   .card-1 {
     padding: 0 16px;
